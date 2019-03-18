@@ -12,9 +12,18 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
+/**
+The class HistogramGenerator takes as argument from the terminal a text file (f.e grades.txt) 
+and generates a histogram with the grades' frequencies 
+author @natalia
+**/
 
 public class HistogramGenerator {
 
+	/**
+	the method readGrades takes as a parameter a variable of type File, and returns an array with grades' frequencies, where the grades are from 0 to 10. 
+	It reads the file line by line and adds 1 to each index of the array each time it encounters the specific grade
+	**/
 	public int[] readGrades(File file) {
 		int[] frequencies = new int[11];
 		
@@ -35,6 +44,9 @@ public class HistogramGenerator {
 		return frequencies;
 	}
 	
+	/**
+	the method generateChart takes as an argument an array of grades' frequencies and generates a histogram with the values of this array.
+	**/
 	public void generateChart(int[] frequencies) {
 
 		XYSeriesCollection dataset = new XYSeriesCollection();
