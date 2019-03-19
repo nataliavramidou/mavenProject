@@ -6,7 +6,8 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>gradeshistogram</artifactId>
-  <name>mavenModule</name>
+  <name>Grades_Histogram</name>
+  <description>This module generates a histogram that illustrates students' grades' frequencies.</description>
   
   
   <dependencies>
