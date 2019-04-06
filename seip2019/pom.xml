@@ -19,5 +19,6 @@
 
 <modules>
 <module>gradeshistogram</module>
+	<module>designpatterns</module>
 </modules>
 </project>
