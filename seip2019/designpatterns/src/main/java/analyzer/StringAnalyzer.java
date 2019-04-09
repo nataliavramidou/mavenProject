@@ -1,12 +1,10 @@
-package strategy;
+package analyzer;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
  * Class StringAnalyzer participates in the strategy pattern.
- * it extends abstract class MyStrategy.
+ * it extends abstract class Analyzer.
  * it analyzes a java file using the method of string comparison
  * to find out the number of lines of code (comments excluded),
  * the number of classes and the number of methods
@@ -14,7 +12,7 @@ import java.util.List;
  * @author natalia
  * 
  */
-public class StringAnalyzer extends MyStrategy {
+public class StringAnalyzer extends Analyzer {
 	private List<String> fileLines;
 	
 	public StringAnalyzer (List<String> list) {

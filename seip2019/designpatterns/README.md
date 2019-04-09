@@ -9,8 +9,8 @@ To run the application:
 3. Install maven and add the bin directory to the PATH environmental variable
 4. Download eclipse workspace
 5. Open the project in the eclipse workspace and run maven install
-6. The maven install order creates two executable jars in the target folder of the designpatterns module. Bring git bash in the target folder and execute the command
-"java -jar <jar-with-depedencies> <path-of-the-java-file> <string or regex>"
+6. The maven install order creates an executable jar in the target folder of the designpatterns module. Bring git bash in the target folder and execute the command
+"java -jar <jar> <path-of-the-java-file> <string or regex>".
 
 After these steps a csv file with the metrics of the java file will be generated in the target folder of the module.
 

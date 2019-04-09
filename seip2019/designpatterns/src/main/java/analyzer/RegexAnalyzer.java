@@ -1,4 +1,4 @@
-package strategy;
+package analyzer;
 
 import java.util.List;
 import java.util.regex.Matcher;
@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 
 /**
  * Class RegexAnalyzer participates in the strategy pattern.
- * it extends abstract class MyStrategy.
+ * it extends abstract class Analyzer.
  * it analyzes a java file by using regular expressions
  * to find out the number of lines of code (comments excluded),
  * the number of classes and the number of methods
@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  * 
  */
 
-public class RegexAnalyzer extends MyStrategy {
+public class RegexAnalyzer extends Analyzer {
 	private List<String> list;
 	
 	public RegexAnalyzer (List<String> list) {
@@ -40,7 +40,7 @@ public class RegexAnalyzer extends MyStrategy {
 		
 		String pattern_comment = "^\\s\\*|^/|^\t\\s\\*(.*)|^\\s/(.*)|^$|^\\s*$";
 		String pattern_class = "(.*). class .(.*)";
-		String pattern_method = "(.*)(public|private)\\s(void|String|int|void|float|double|List|long)(.*)\\((.*)\\)\\s\\{";
+		String pattern_method = "(.*)(public|private)(.*)(void|String|int|void|float|double|List|long)(.*)\\((.*)\\)\\s\\{";
 		
 		Pattern comment = Pattern.compile(pattern_comment);
 		Pattern classes = Pattern.compile(pattern_class);

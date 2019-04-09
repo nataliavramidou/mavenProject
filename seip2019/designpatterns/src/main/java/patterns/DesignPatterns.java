@@ -23,7 +23,7 @@ public class DesignPatterns {
 			 System.err.println("Invalid arguments count:" + args.length);
 	    }
 		
-		Facade.MyFacade obj = new Facade.MyFacade();
+		AccessToFunctionalities obj = new AccessToFunctionalities();
 		obj.readSourceCode(file);
 		obj.calculateMetrics(method);
 		obj.writeCSV();

@@ -1,4 +1,4 @@
-package utility;
+package patterns;
 
 import java.util.ArrayList;
 import java.util.List;  
@@ -12,14 +12,14 @@ import java.io.PrintWriter;
 
 
 /**
- * Class MyUtility participates in the utility pattern
+ * Class Functionalities participates in the utility pattern
  * It includes the static method readFile for reading a file line by line and
  * the static method writeFile for creating a csv file with some metrics.
  * @author natalia
  * 
  */
 
-public final class MyUtility {
+public final class Functionalities {
 	
 	/*
 	 *  the readfile method takes an argument of type File
