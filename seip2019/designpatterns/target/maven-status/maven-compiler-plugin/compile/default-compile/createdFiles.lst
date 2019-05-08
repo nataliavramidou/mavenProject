@@ -1,0 +1,7 @@
+analyzer\AnalyzerFactory.class
+analyzer\RegexAnalyzer.class
+patterns\DesignPatterns.class
+patterns\Functionalities.class
+patterns\AccessToFunctionalities.class
+analyzer\Analyzer.class
+analyzer\StringAnalyzer.class
