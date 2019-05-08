@@ -1,0 +1,20 @@
+language: java # Define the language
+jdk: # Define the execution environments
+- openjdk8
+- oraclejdk8
+branches: # Execute job only on specific branch commits
+only:
+- master
+sudo: required # Linux Administrator permissions
+before_install:
+- sudo apt update # Update the package list
+install:
+- sudo apt install maven –y # Install required packages
+before_script: # Perform commands
+- cd seip2019
+script: # Build the project
+- mvn clean package
+- mvn cobertura:cobertura
+after_success: # Notify users about the result
+- bash <(curl -s https://codecov.io/bash) -t 65b84b2f-52d4-484c-983b-a6ae7324ceee
+- echo “Process terminated successfully”
