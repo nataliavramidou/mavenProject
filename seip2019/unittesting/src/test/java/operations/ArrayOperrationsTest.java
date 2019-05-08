@@ -35,7 +35,7 @@ public class ArrayOperrationsTest {
 	public void test_findMaxInFile() {		
 		when(file.readFile("src/test/resources/valid_inputs")).thenReturn(new int[] {3, 4, 6, 25, 9, 0, 4, 64});
 		
-		Assert.assertEquals(64, array_op.findMaxInFile("valid_inputs"));
+		Assert.assertEquals(64, array_op.findMaxInFile("src/test/resources/valid_inputs"));
 	}
 	
 	/**
