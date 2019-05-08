@@ -11,9 +11,10 @@ before_install:
 install:
 - sudo apt install maven –y # Install required packages
 before_script: # Perform commands
-- cd Seip2019
+- cd seip2019
 script: # Build the project
-- "mvn cobertura:cobertura"
+- mvn clean package
+- mvn cobertura:cobertura
 after_success: # Notify users about the result
 - bash <(curl -s https://codecov.io/bash) -t 65b84b2f-52d4-484c-983b-a6ae7324ceee
 - echo “Process terminated successfully”
