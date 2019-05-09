@@ -8,8 +8,6 @@ only:
 sudo: required # Linux Administrator permissions
 before_install:
 - sudo apt update # Update the package list
-install:
-- sudo apt install maven –y # Install required packages
 before_script: # Perform commands
 - cd seip2019
 script: # Build the project
